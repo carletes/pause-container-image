@@ -25,3 +25,5 @@ RUN set -eux \
 	tcpdump
 
 COPY --from=build /src/pause /sbin/pause
+
+ENTRYPOINT ["/sbin/pause"]
